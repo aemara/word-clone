@@ -10,7 +10,7 @@ function GuessInput({ setGuessResults, guessResults }) {
 
   return (
     <form
-      class="guess-input-wrapper"
+      className="guess-input-wrapper"
       onSubmit={(event) => {
         event.preventDefault();
         addToGuessResults(input);
