@@ -6,9 +6,12 @@ function Cell({ letter, status }) {
   return <span className={`cell ${status}`}>{letter}</span>;
 }
 
-function Guess({ word, answer }) {
+function Guess({ word, answer}) {
   const result = checkGuess(word, answer);
-  console.log(result);
+
+
+  // if the player is out of guesses and state is not won, it's a LOSS.
+
   return (
     <p className="guess">
       {range(5).map((index) => {
