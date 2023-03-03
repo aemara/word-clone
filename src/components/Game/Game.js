@@ -16,7 +16,10 @@ function Game() {
   return (
     <div>
       <GuessResults guessResults={guessResults} />
-      <GuessInput setGuessResults={setGuessResults} guessResults={guessResults} />
+      <GuessInput
+        setGuessResults={setGuessResults}
+        guessResults={guessResults}
+      />
     </div>
   );
 }
